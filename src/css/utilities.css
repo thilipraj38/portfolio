@@ -196,9 +196,22 @@ h2::selection {
   color: var(--text-color);
 }
 
-[data-theme="dark"] .skills {
-  color: var(--text-color-two);
+#skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 3rem;
 }
+
+.skill {
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  background-color: var(--card-background); /* Or a different background color if needed */
+  color: var(--text-color); /* Change to a lighter color for better visibility */
+}
+
 /* Media Queries */
 @media (max-width: 768px) {
   .header-container {
